@@ -1,9 +1,1 @@
-{
-    "products": [
-        {
-            "id": "0.345655645454",
-            "qty": 1
-        }
-    ],
-    "totalPrice": 4545
-}
+{"products":[],"totalPrice":0}
