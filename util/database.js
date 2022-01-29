@@ -14,10 +14,10 @@ let _db;
 
 const mongoConnect = () => {
   MongoClient.connect(
-    "mongodb+srv://new-user-01:Jaimatadi@cluster0.3optd.mongodb.net/Shop?retryWrites=true&w=majority"
+    "mongodb+srv://new-user-01:Jaimatadi@cluster0.3optd.mongodb.net/Shop?retryWrites=true&w=majority" , {useUnifiedTopology: true, useNewUrlParser: true }
   )
     .then(client => {
-      console.log('Connected');
+      console.log('Server Connected');
       _db = client.db();
     })
     .catch((err) => {console.log(err)});
@@ -35,5 +35,3 @@ const getDb = () =>{
 
 exports.mongoConnect = mongoConnect;
 exports.db = getDb;
-
-
